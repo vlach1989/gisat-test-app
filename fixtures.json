@@ -1,0 +1,20 @@
+{
+      "application": {
+            "applications": [],
+            "configurations": []
+      },
+      "metadata": {
+            "places": [],
+            "periods": [],
+            "layerTemplates": []
+      },
+      "dataSources": {
+            "spatial": []
+      },
+      "relations": {
+            "spatial": []
+      },
+      "views": {
+            "views": []
+      }
+}

@@ -1,0 +1,3 @@
+window.runtimeConfig = {
+	// apiBackendPath: 'backend'
+};

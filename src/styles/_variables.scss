@@ -1,0 +1,56 @@
+@import '~@gisatcz/ptr-core/lib/styles/_variables';
+
+@function hexToRGB($color) {
+  // @return rgb(red($color), green($color), blue($color))
+  @return red($color), green($color), blue($color);
+}
+
+$lightAccent0: hsl(40,100%,99.41%);
+$lightAccent0rgb: 255, 254, 252;
+$lightAccent05: hsl(72.86,50%,94.51%);
+$lightAccent10: hsl(78.46,50%,89.8%);
+$lightAccent15: hsl(78.46,50.65%,84.9%);
+$lightAccent20: hsl(80,50.5%,80.2%);
+$lightAccent25: hsl(80,50.4%,75.49%);
+$lightAccent30: hsl(80.8,50.34%,70.78%);
+$lightAccent35: hsl(80.69,50.29%,66.08%);
+$lightAccent40: hsl(81,50.51%,61.18%);
+$lightAccent45: hsl(80.89,50.45%,56.47%);
+$lightAccent50: hsl(81.29,50.41%,51.76%);
+$lightAccent50rgb: 150, 194, 70;
+$lightAccent55: hsl(81.43,47.06%,46.67%);
+$lightAccent60: hsl(81,47.17%,41.57%);
+$lightAccent65: hsl(81.14,47.31%,36.47%);
+$lightAccent70: hsl(80.53,47.5%,31.37%);
+$lightAccent75: hsl(80.63,47.76%,26.27%);
+$lightAccent80: hsl(80,47.66%,20.98%);
+$lightAccent85: hsl(78.46,48.15%,15.88%);
+$lightAccent90: hsl(77.78,49.09%,10.78%);
+$lightAccent95: hsl(72,51.72%,5.69%);
+$lightAccent100: hsl(45,100%,0.78%);
+$lightAccent100rgb: 4, 3, 0;
+
+$darkAccent0: hsl(45,100%,0.78%);
+$darkAccent0rgb: 4, 3, 0;
+$darkAccent05: hsl(72,51.72%,5.69%);
+$darkAccent10: hsl(77.78,49.09%,10.78%);
+$darkAccent15: hsl(78.46,48.15%,15.88%);
+$darkAccent20: hsl(80,47.66%,20.98%);
+$darkAccent25: hsl(80.63,47.76%,26.27%);
+$darkAccent30: hsl(80.53,47.5%,31.37%);
+$darkAccent35: hsl(81.14,47.31%,36.47%);
+$darkAccent40: hsl(81,47.17%,41.57%);
+$darkAccent45: hsl(81.43,47.06%,46.67%);
+$darkAccent50: hsl(81.29,50.41%,51.76%);
+$darkAccent50rgb: 150, 194, 70;
+$darkAccent55: hsl(80.89,50.45%,56.47%);
+$darkAccent60: hsl(81,50.51%,61.18%);
+$darkAccent65: hsl(80.69,50.29%,66.08%);
+$darkAccent70: hsl(80.8,50.34%,70.78%);
+$darkAccent75: hsl(80,50.4%,75.49%);
+$darkAccent80: hsl(80,50.5%,80.2%);
+$darkAccent85: hsl(78.46,50.65%,84.9%);
+$darkAccent90: hsl(78.46,50%,89.8%);
+$darkAccent95: hsl(72.86,50%,94.51%);
+$darkAccent100: hsl(40,100%,99.41%);
+$darkAccent100rgb: 255, 254, 252;

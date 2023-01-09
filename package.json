@@ -1,0 +1,81 @@
+{
+	"name": "APP-TEMPLATE-REPLACE-APP-REPO-ID",
+	"description": "APP-TEMPLATE-REPLACE-APP-REPO-DESCRIPTION",
+	"homepage": ".",
+	"keywords": [
+		"panther",
+		"gisat",
+		"ptr"
+	],
+	"path": "/",
+	"version": "0.0.1",
+	"private": true,
+	"prettier": "@gisatcz/prettier-config",
+	"husky": {
+		"hooks": {
+			"pre-commit": "pretty-quick --staged"
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "APP-TEMPLATE-REPLACE-APP-REPO-URL"
+	},
+	"dependencies": {
+		"@analytics/google-analytics": "^0.5.3",
+		"@gisatcz/ptr-components": "^1.3.0",
+		"@gisatcz/ptr-core": "^1.6.0",
+		"@gisatcz/ptr-router": "^0.1.1",
+		"@gisatcz/ptr-state": "^2.0.0-dev.24",
+		"@gisatcz/ptr-utils": "^1.5.4",
+		"analytics": "^0.8.0",
+		"history": "^5.3.0",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-helmet": "^6.1.0",
+		"use-analytics": "0.0.5"
+	},
+	"devDependencies": {
+		"@cra-express/core": "^4.3.2",
+		"@gisatcz/prettier-config": "0.0.3",
+		"cra-universal": "^4.5.0",
+		"css-loader": "^6.6.0",
+		"dotenv": "^10.0.0",
+		"eslint-config-prettier": "^8.4.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"file-loader": "^6.2.0",
+		"husky": "^7.0.4",
+		"local-cors-proxy": "^1.1.0",
+		"null-loader": "^4.0.1",
+		"prettier": "^2.5.1",
+		"pretty-quick": "^3.1.3",
+		"react-app-rewired": "^2.2.1",
+		"react-scripts": "^4.0.3",
+		"sass": "^1.49.9",
+		"sass-loader": "^10.1.1",
+		"source-map-explorer": "^2.5.2",
+		"style-loader": "^2.0.0",
+		"url-loader": "^4.1.1"
+	},
+	"scripts": {
+		"analyze": "source-map-explorer 'build/static/js/*.js'",
+		"proxy": "lcp --proxyUrl https://dromas-dev.gisat.cz --port 4444 --origin http://localhost:3000 --proxyPartial \"\" --credentials",
+		"proxy:ssr": "lcp --proxyUrl https://ptr.gisat.cz --port 4444 --origin http://localhost:3001 --proxyPartial \"\" --credentials",
+		"start": "react-app-rewired start",
+		"crau:start": "cra-universal start",
+		"start:ssr": "react-app-rewired start",
+		"build:ssr": "cra-universal build",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -b gh-pages -d build",
+		"build": "NODE_ENV=production react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"format": "prettier --write 'src/**/*.js' 'server/**/*.js'",
+		"lint": "eslint .",
+		"lintFix": "eslint . --fix"
+	},
+	"browserslist": [
+		">0.2%",
+		"not dead",
+		"not op_mini all"
+	]
+}
